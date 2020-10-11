@@ -1,16 +1,14 @@
-# flutter_sushi_app
+# Flutter Sushi App
 
-A new Flutter project.
+Live streams where I try to learn and understand the amazing world of Flutter. The idea of this activity is to take up UI challenges and develop amazing Flutter Mobile application.
 
-## Getting Started
+[Github](https://github.com/codingbbq/flutter_sushi_app)
 
-This project is a starting point for a Flutter application.
+[Design](https://dribbble.com/shots/14238521-Sushi-Mobile-App-UX-UI-Design/attachments/5883021?mode=media)
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Live stream logs
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [11 Oct 2020 - Live Stream](https://youtu.be/r6o58SVa2Y0) 
+In this live stream, we setup the flutter project and start working our way through the starter/landing page.  
