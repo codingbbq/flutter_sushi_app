@@ -17,4 +17,18 @@ SushiLandingData worldOfSushi = SushiLandingData(
   image: "assets/images/01landingPage.png",
 );
 
-List<SushiLandingData> sushiLp = [worldOfSushi];
+SushiLandingData whySushi = SushiLandingData(
+  heading: "Why Sushi?",
+  subheading:
+      "Sushi are a perfect combination of everything that you can ask in a cuisine. Why Sushi?, I say, Why Not?",
+  image: "assets/images/01landingPage.png",
+);
+
+SushiLandingData originSushi = SushiLandingData(
+  heading: "It's Origin",
+  subheading:
+      "The history of sushi began with paddy fields in Southeast Asia, where fish was fermented with rice vinegar, salt and rice, after which the rice was discarded.",
+  image: "assets/images/01landingPage.png",
+);
+
+List<SushiLandingData> sushiLp = [worldOfSushi, whySushi, originSushi];
