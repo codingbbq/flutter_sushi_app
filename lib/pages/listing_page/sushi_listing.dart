@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sushi_app/constants/constants.dart' as CONSTANTS;
+import 'package:flutter_sushi_app/models/list_data.dart';
+import 'package:flutter_sushi_app/pages/listing_page/sushi_card.dart';
 import 'package:flutter_sushi_app/pages/listing_page/sushi_tags.dart';
 
 class SushiListingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final orientation = MediaQuery.of(context).orientation;
     return Scaffold(
       backgroundColor: Colors.grey[50],
       appBar: AppBar(
@@ -56,7 +59,23 @@ class SushiListingPage extends StatelessWidget {
             SushiTags(),
 
             SizedBox(
-              height: 15.0,
+              height: 100.0,
+            ),
+
+            Expanded(
+              child: GridView.builder(
+                shrinkWrap: true,
+                scrollDirection: Axis.vertical,
+                itemCount: sushiList.length,
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    childAspectRatio: MediaQuery.of(context).size.height / 800,
+                    mainAxisSpacing: 80.0,
+                    crossAxisSpacing: 20.0,
+                    crossAxisCount:
+                        (orientation == Orientation.portrait) ? 2 : 3),
+                itemBuilder: (BuildContext context, int index) =>
+                    SushiCard(item: sushiList[index]),
+              ),
             ),
           ],
         ),
