@@ -10,6 +10,7 @@ class SushiListingPage extends StatelessWidget {
     final orientation = MediaQuery.of(context).orientation;
     return Scaffold(
       backgroundColor: Colors.grey[50],
+      extendBody: true,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         shadowColor: Colors.transparent,
@@ -59,7 +60,7 @@ class SushiListingPage extends StatelessWidget {
             SushiTags(),
 
             SizedBox(
-              height: 100.0,
+              height: 20.0,
             ),
 
             Expanded(
@@ -68,8 +69,8 @@ class SushiListingPage extends StatelessWidget {
                 scrollDirection: Axis.vertical,
                 itemCount: sushiList.length,
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    childAspectRatio: MediaQuery.of(context).size.height / 800,
-                    mainAxisSpacing: 80.0,
+                    childAspectRatio: MediaQuery.of(context).size.height / 1050,
+                    mainAxisSpacing: 30.0,
                     crossAxisSpacing: 20.0,
                     crossAxisCount:
                         (orientation == Orientation.portrait) ? 2 : 3),

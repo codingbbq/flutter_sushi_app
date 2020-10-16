@@ -11,22 +11,26 @@ class SushiCard extends StatelessWidget {
     return Stack(
       children: [
         Container(
+          margin: EdgeInsets.only(
+            top: 80.0,
+          ),
           padding: EdgeInsets.only(
             top: 70.0,
             left: 15.0,
             right: 15.0,
-            bottom: 15.0,
+            bottom: 5.0,
           ),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(20.0),
             gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  Colors.grey[50],
-                  Colors.white,
-                ]),
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                Colors.grey[50],
+                Colors.white,
+              ],
+            ),
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -38,10 +42,13 @@ class SushiCard extends StatelessWidget {
                   fontSize: 18.0,
                 ),
               ),
+              SizedBox(
+                height: 5.0,
+              ),
               Text(
                 item.sushiSubTitle,
                 style: TextStyle(
-                  fontSize: 16.0,
+                  fontSize: 14.0,
                 ),
               ),
               Row(
@@ -62,17 +69,14 @@ class SushiCard extends StatelessWidget {
             ],
           ),
         ),
-
-        // Images
         Positioned(
-          left: 0,
-          right: 0,
-          top: -20.0,
+          top: 5.0,
+          left: 0.0,
+          right: 0.0,
           child: Container(
-            height: 60.0,
-            child: Placeholder(
-              color: Colors.black,
-            ),
+            height: 130,
+            width: 100,
+            color: Colors.orange,
           ),
         ),
       ],
