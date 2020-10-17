@@ -76,7 +76,9 @@ class SushiCard extends StatelessWidget {
           child: Container(
             height: 130,
             width: 100,
-            color: Colors.orange,
+            child: Image.asset(
+              item.sushiImage,
+            ),
           ),
         ),
       ],

@@ -17,18 +17,22 @@ class SushiDetails extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            width: MediaQuery.of(context).size.width * 0.70,
-            height: MediaQuery.of(context).size.width * 0.70,
             decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(40.0),
-                boxShadow: <BoxShadow>[
-                  BoxShadow(
-                    color: Colors.grey,
-                    blurRadius: 20.0,
-                    spreadRadius: 2.0,
-                  )
-                ]),
+              boxShadow: <BoxShadow>[
+                BoxShadow(
+                  color: Colors.grey,
+                  blurRadius: 50.0,
+                  spreadRadius: 1.0,
+                )
+              ],
+            ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(40.0),
+              child: Image.asset(
+                lp.image,
+                width: MediaQuery.of(context).size.width * 0.80,
+              ),
+            ),
           ),
           SizedBox(
             height: 60.0,
