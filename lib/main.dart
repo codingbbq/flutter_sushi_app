@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sushi_app/pages/landing_page/landing_page.dart';
 import 'package:flutter_sushi_app/pages/listing_page/sushi_listing.dart';
+import 'package:flutter_sushi_app/pages/order_page/sushi_order.dart';
 
 void main() {
   runApp(SushiApp());
@@ -20,6 +21,7 @@ class SushiApp extends StatelessWidget {
       routes: {
         '/': (context) => LandingPage(),
         '/sushiListing': (context) => SushiListingPage(),
+        '/order': (context) => SushiOrderPage(),
       },
     );
   }

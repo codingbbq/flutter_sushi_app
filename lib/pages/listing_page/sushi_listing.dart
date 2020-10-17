@@ -8,6 +8,14 @@ class SushiListingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final orientation = MediaQuery.of(context).orientation;
+
+    void _onItemTapped(int value) {
+      // If Value == 1, Redirect user to Order page
+      if (value == 1) {
+        Navigator.pushNamed(context, '/order');
+      }
+    }
+
     return Scaffold(
       backgroundColor: Colors.grey[50],
       extendBody: true,
@@ -90,6 +98,7 @@ class SushiListingPage extends StatelessWidget {
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.white,
         backgroundColor: CONSTANTS.black,
+        onTap: _onItemTapped,
         items: [
           BottomNavigationBarItem(
             icon: Icon(
