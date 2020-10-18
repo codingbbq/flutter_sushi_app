@@ -1,6 +1,6 @@
 # Flutter Sushi App
 
-With this UI challenge, I try to do Live streams where I learn and understand the amazing world of Flutter. 
+Flutter UI challenge 007 - Sushi App : I take upon this UI challenge to learn and get a better understanding of how flutter works.
 
 [Github](https://github.com/codingbbq/flutter_sushi_app)
 
@@ -12,7 +12,7 @@ With this UI challenge, I try to do Live streams where I learn and understand th
 
 ## Live stream logs
 
-- [11 Oct 2020 - Live Stream](https://youtu.be/r6o58SVa2Y0) 
+-[11 Oct 2020 - Live Stream](https://youtu.be/r6o58SVa2Y0) 
 In this live stream, we setup the flutter project and start working our way through the starter/landing page. 
 
 -[12th Oct 2020 - Live Stream](https://youtu.be/HsCeFsbFijk)
@@ -44,6 +44,6 @@ In this live stream, we conclude the entire UI challenge.
 - There is still scope of improvement and getting the UI as close to the design
 - Some of the areas such as card, list has a defined width and height which means that there is limited scope of having expanding content. I need to learn to code so that the UI is adaptive.
 
-Below are some of the screenshots of the final UI
+Below are screenshot of the final UI
 
 ![Screenshot](screenshot/for_github.png)
