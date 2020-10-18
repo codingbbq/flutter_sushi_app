@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sushi_app/constants/constants.dart' as CONSTANTS;
+import 'package:flutter_sushi_app/models/list_data.dart';
 import 'package:flutter_sushi_app/pages/order_page/custom_bottom_nav.dart';
+import 'package:flutter_sushi_app/pages/order_page/order_details.dart';
 
 class SushiOrderPage extends StatelessWidget {
   @override
@@ -38,6 +40,29 @@ class SushiOrderPage extends StatelessWidget {
       ),
       body: Stack(
         children: [
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Container(
+              padding: EdgeInsets.only(
+                top: 20.0,
+                left: 20.0,
+                right: 20.0,
+              ),
+              width: MediaQuery.of(context).size.width,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Your Order",
+                    style: CONSTANTS.h1,
+                  ),
+                  OrderDetails(item: sushiList[0]),
+                  OrderDetails(item: sushiList[1]),
+                ],
+              ),
+            ),
+          ),
+
           // Custom Bottom Navigation
           CustomBottnOrderNavigation(),
         ],
