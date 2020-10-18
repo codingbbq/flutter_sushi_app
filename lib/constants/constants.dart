@@ -10,3 +10,14 @@ const TextStyle h1 = TextStyle(
   fontSize: 30.0,
   fontWeight: FontWeight.bold,
 );
+
+const TextStyle orderTxt = TextStyle(
+  color: black,
+  fontSize: 24.0,
+  fontWeight: FontWeight.bold,
+);
+
+final TextStyle orderVal = TextStyle(
+  color: Colors.grey[700],
+  fontSize: 20.0,
+);

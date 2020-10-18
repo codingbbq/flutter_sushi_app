@@ -24,11 +24,19 @@ class OrderDetails extends StatelessWidget {
             borderRadius: BorderRadius.circular(20.0),
             boxShadow: <BoxShadow>[
               BoxShadow(
-                blurRadius: 1.0,
-                spreadRadius: 10.0,
-                color: Colors.grey[50],
+                blurRadius: 30.0,
+                spreadRadius: 2.0,
+                color: Colors.grey[100],
               )
             ],
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                Colors.grey[50],
+                Colors.white,
+              ],
+            ),
           ),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -47,17 +55,21 @@ class OrderDetails extends StatelessWidget {
                   SizedBox(
                     height: 15.0,
                   ),
-                  Text(
-                    item.sushiSubTitle,
-                    style: TextStyle(
-                      fontSize: 16.0,
+                  SizedBox(
+                    width: 140,
+                    child: Text(
+                      item.sushiSubTitle,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                        fontSize: 16.0,
+                      ),
                     ),
                   ),
                   SizedBox(
                     height: 15.0,
                   ),
                   Text(
-                    item.sushiPrice,
+                    r"$" + item.sushiPrice,
                     style: TextStyle(
                       fontSize: 18.0,
                       fontWeight: FontWeight.bold,
@@ -81,7 +93,7 @@ class OrderDetails extends StatelessWidget {
           child: Container(
             child: Image.asset(
               item.sushiImage,
-              width: 120.0,
+              width: 150.0,
               fit: BoxFit.contain,
             ),
           ),

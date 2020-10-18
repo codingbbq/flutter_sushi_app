@@ -4,10 +4,8 @@ class CustomBottnOrderNavigation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    return Positioned(
-      bottom: 0,
-      left: 0,
-      height: 100.0,
+    return Container(
+      height: 100,
       width: size.width,
       child: CustomPaint(
         painter: OrderBtnPaint(),
